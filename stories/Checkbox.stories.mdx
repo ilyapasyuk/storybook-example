@@ -1,0 +1,28 @@
+import {Meta, Story, Canvas} from '@storybook/addon-docs/blocks'
+import {useState} from 'react'
+
+import {CheckBox} from "../Components/Checkbox";
+import {Button} from "./Button";
+
+
+<Meta title="Components/Checkbox"/>
+
+# Welcome to Checkbox story
+
+
+<Canvas>
+    <Story name="with Button">
+        {() => {
+            const [isChecked, setChecked] = useState(false);
+            return (
+                <>
+                    <CheckBox isChecked={isChecked} id="my-checkbox" onClick={setChecked}/>
+                    <hr/>
+                    <Button label="Button" primary={isChecked}/>
+                </>
+            )
+        }}
+    </Story>
+</Canvas>
+
+

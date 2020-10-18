@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const CheckBox = ({label, isChecked, id, onClick}) => {
     return (
         <label htmlFor={id}>
-            <input type="checkbox" id={id} checked={isChecked} onChange={onClick}/> <span>{label}</span>
+            <input type="checkbox" id={id} checked={isChecked} onChange={(event => onClick(event.target.checked))}/> <span>{label}</span>
         </label>
     )
 }
