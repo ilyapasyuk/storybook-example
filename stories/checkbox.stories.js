@@ -15,9 +15,3 @@ withLabel.args = {
     isChecked: true,
     id: 'my-checkbox'
 }
-
-export const withLongText = (args) => <Checkbox {...args}/>
-
-withLongText.args = {
-    label: '../Components/Checkbox ../Components/Checkbox../Components/Checkbox ../Components/Checkbox ../Components/Checkbox../Components/Checkbox'
-}
